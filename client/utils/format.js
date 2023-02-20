@@ -2,7 +2,7 @@ import useAssistantStore from '@/stores/assistantStore';
 import { SHORT_DATE_FORMAT } from '@/utils/constant';
 import moment from 'moment';
 
-export const dateFormat = (date) => moment(date).locale('es').format('hh:mm a,  DD/MM/YYYY');
+export const dateFormat = (date) => moment(date).locale('es').format('hh:mm:ss,  DD/MM/YYYY');
 
 const dateFormatterLLL = (date) => moment(date).locale('es').format('lll');
 

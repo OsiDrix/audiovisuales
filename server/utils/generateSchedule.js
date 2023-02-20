@@ -5,7 +5,7 @@ const KEY = 'movieID';
 const groupByDate = (movie) => {
   const groups = movie.reduce((dates, currentDate) => {
     const day = moment(currentDate.startDate).format('YYYY-MM-DD');
-    const hour = moment(currentDate.startDate).format('hh:mm a');
+    const hour = moment(currentDate.startDate).format('hh:mm:ss');
     if (!dates[day]) dates[day] = [];
     dates[day].push({ hour, scheduleId: currentDate.scheduleId, roomId: currentDate.roomId });
 

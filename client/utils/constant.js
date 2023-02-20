@@ -30,5 +30,5 @@ export const NOT_USER_DATA_FOUND_MESSAGE =
 export const RESERVATION_ERROR_MESSAGE =
   'Lamentablemente no se ha podido reservar los equipos audiovisuales seleccionados, recomendamos que se comunique con el departamento de audiovisuales.';
 export const DATE_FORMAT_YYYY_MM_DD = 'YYYY-MM-DD';
-export const DATE_FORMAT_LONG = 'YYYY-MM-DD HH:mm:ss a';
+export const DATE_FORMAT_LONG = 'YYYY-MM-DD HH:mm:ss';
 export const DAYS = ['Domingos', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabados'];

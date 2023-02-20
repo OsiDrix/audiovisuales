@@ -135,6 +135,7 @@ export const storeProductBrand = async (req, res, onlyStore = true) => {
     const [result] = await pool.query(
       `SELECT COUNT(*) AS total from product_brand where brand = '${brand}'`
     );
+
     const isBrandRegistered = result[0].total > 0;
 
     if (isBrandRegistered) {
