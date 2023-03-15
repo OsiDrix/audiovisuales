@@ -28,7 +28,8 @@ const Router = () => (
     <PublicRoute exact path="/" layout={PublicLayout} component={HomePage} />
 
     {/*  ADMIN */}
-    <PrivateRoute exact path="/dashboard" layout={MainLayout} component={ReservationSchedule} />
+    <PrivateRoute 
+      exact path="/dashboard" layout={MainLayout} component={ReservationTable} />
 
     <PrivateRoute
       exact
@@ -42,7 +43,12 @@ const Router = () => (
       layout={MainLayout}
       component={ProductsMaintenance}
     />
-    <PrivateRoute exact path="/dashboard/productos" layout={MainLayout} component={ProductTable} />
+    <PrivateRoute 
+      exact 
+      path="/dashboard/productos" 
+      layout={MainLayout} 
+      component={ProductTable} 
+    />
 
     <PrivateRoute
       exact
@@ -62,7 +68,7 @@ const Router = () => (
       exact
       path="/dashboard/reservaciones"
       layout={MainLayout}
-      component={ReservationTable}
+      component={ReservationSchedule}
     />
 
     <PublicRoute exact path="*" layout={EmptyLayout} component={NotFound} />

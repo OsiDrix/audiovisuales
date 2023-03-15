@@ -13,14 +13,14 @@ import { useEffect, useMemo, useState } from 'react';
 import Swal from 'sweetalert2';
 
 const columns = [
-  { id: 'id', label: 'ID' },
-  { id: 'userClassroom', label: 'Aula' },
-  { id: 'userName', label: 'Nombre' },
-  { id: 'profName', label: 'Profesor' },
+  { id: 'user_name', label: 'Nombre' },
+  { id: 'user_classroom', label: 'Aula' },
+  { id: 'user_phone', label: 'Telefono' },
+  { id: 'prof_name', label: 'Profesor' },
   { id: 'fromDate', label: 'Fecha inicial' },
   { id: 'toDate', label: 'Fecha final' },
-  { id: 'productsDescription', label: 'Equipos' },
-  { id: 'assistantId', label: 'Auxiliar' },
+  { id: 'productType', label: 'Equipos' },
+  { id: 'assistant_id', label: 'Auxiliar' },
   { id: 'isActive', label: 'Estado' },
 ];
 

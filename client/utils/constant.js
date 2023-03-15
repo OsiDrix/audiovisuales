@@ -4,8 +4,8 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 
 export const AUXILIAR_ROLE_ID = 1;
 export const RESERVATION_ACTIVE_COLOR = '#0b8043';
-export const RESERVATION_REJECTED_COLOR = '#e67c73';
-export const RESERVATION_PROGRESS_COLOR = '#70caee';
+export const RESERVATION_REJECTED_COLOR = 'red';
+export const RESERVATION_PROGRESS_COLOR = 'blue';
 export const FILTER_TYPES = {
   NEXT: 'nextToStart',
   IN_PROGRESS: 'inProgress',

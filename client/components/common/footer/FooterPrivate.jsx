@@ -15,7 +15,7 @@ const FooterPrivate = (props) => {
 
   return (
     <div className={classes.legal}>
-      <div className="copyright">© Caribbean Cinema, 2022. Creado por LICEM 🔥</div>
+      <div className="copyright">© UTESA, 2022. 🔥</div>
     </div>
   );
 };

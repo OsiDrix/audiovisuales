@@ -57,7 +57,7 @@ const LoginForm = ({ handleSubmit, classes, errorMessage }) => {
         <CardHeader
           className={classes.cardHeader}
           title={
-            <img className={classes.headerImg} src="/img/logo.png" alt={'Caribbean Cinema Logo'} />
+            <img className={classes.headerImg} src="/img/logo.png" alt={'UTESA LOGO'} />
           }
         />
         {errorMessage && (

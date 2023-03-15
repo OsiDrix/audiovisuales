@@ -20,13 +20,6 @@ export default function HomePage() {
   return (
     <Container maxWidth="md">
       <CardContent className={classes.content}>
-        {isAuth && (
-          <Link to={'/dashboard'}>
-            <Typography component="h1" variant="h5">
-              DASHBOARD
-            </Typography>
-          </Link>
-        )}
       </CardContent>
       {/* <Modal /> */}
       <ReservationAudiovisualEquipment />

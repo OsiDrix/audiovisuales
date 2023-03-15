@@ -87,7 +87,8 @@ export const store = async (req, res) => {
               !skipEquipment.includes(productType) &&
               item.stockAvailable > 0
             ) {
-              const insert = `INSERT INTO prod_vs_res (id, product_id, reservation_id) VALUES ('${uuidv4()}', '${item.id}', '${id}');`;
+              const insert = `INSERT INTO audiovisuales.prod_vs_res (id, product_id, reservation_id) VALUES ('${uuidv4()}', '${item.id}', '${id}');`;
+              console.log(item.id);
               await pool.query(insert);
               skipEquipment.push(productType);
             }

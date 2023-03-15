@@ -94,8 +94,8 @@ const MiniDrawer = (props) => {
       icon: <DevicesOutlinedIcon />,
     },
     {
-      label: 'Reservaciones',
-      link: '/reservaciones',
+      label: 'Reportes',
+      link: '/',
       icon: <TableChartIcon />,
     },
   ];

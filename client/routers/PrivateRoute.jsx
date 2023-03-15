@@ -12,13 +12,13 @@ const PrivateRoute = ({ component: Component, layout: Layout, ...rest }) => (
           <Component {...props} />
         </Layout>
       ) : (
-        <Redirect
-          to={{
-            pathname: '/',
-            state: { from: props.location },
-          }}
-        />
-      )
+            <Redirect
+              to={{
+              pathname: '/dashboard/reservaciones',
+              state: { from: props.location },
+              }}
+            />
+          )
     }
   />
 );

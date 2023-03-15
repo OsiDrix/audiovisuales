@@ -35,11 +35,11 @@ const ProductsMaintenance = ({ classes }) => {
   });
 
   const { productType, fetchAllProductType } = useProductTypeStore((state) => state);
-  const { productBrand, fetchAllProductBrand } = useProductBrandStore((state) => state);
+  //const { productBrand, fetchAllProductBrand } = useProductBrandStore((state) => state);
 
   useEffect(() => {
     fetchAllProductType();
-    fetchAllProductBrand();
+    //fetchAllProductBrand();
   }, []);
 
   return (
@@ -69,7 +69,8 @@ const ProductsMaintenance = ({ classes }) => {
                 <TextField label={'Producto'} name={'name'} />
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={6}>
-                    <DropDown label={'Marca'} name={'brand'} items={productBrand} />
+                  <TextField label={'Marca'} name={'brand'} />
+                    
                   </Grid>
                   <Grid item xs={12} md={6}>
                     <NumberField label={'Cantidad'} name={'stock'} />
